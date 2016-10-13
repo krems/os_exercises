@@ -4,7 +4,6 @@
 
 static long long int ITERS = 100000000;
 long long int c1;
-volatile char padding2[64];
 long long int c2;
 
 
