@@ -2,13 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static long long int ITERS = 100000000;
+static long long int ITERS = 1000000000;
 long long int c1;
 long long int c2;
 
 
 void *mythread(void *dummy) {
-    int i;
+    long long int i;
     for (i = 0; i < ITERS; i++) {
         c1++;
     }
@@ -23,7 +23,7 @@ int main() {
         exit(1);
     }
     printf("Thread created, thid %lu\n", thid);
-    int i;
+    long long int i;
     for (i = 0; i < ITERS; i++) {
         c2++;
     }
